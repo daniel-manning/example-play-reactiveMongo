@@ -11,6 +11,7 @@ resolvers += Resolver.bintrayRepo("hmrc", "releases")
 
 libraryDependencies += filters
 libraryDependencies += "uk.gov.hmrc" %% "play-reactivemongo" % "6.2.0"
+libraryDependencies += "com.thoughtworks.xstream" % "xstream" % "1.4.10"
 libraryDependencies += "org.scalatestplus.play" %% "scalatestplus-play" % "2.0.1" % Test
 
 // Adds additional packages into Twirl
