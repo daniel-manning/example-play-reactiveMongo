@@ -1,4 +1,6 @@
 package models
 
-case class Earthquake(latitude:Double,longitude:Double)
+import org.joda.time.DateTime
+
+case class Earthquake(date:DateTime, latitude:Double,longitude:Double, magnitude:String)
 

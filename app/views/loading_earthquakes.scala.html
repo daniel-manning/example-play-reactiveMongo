@@ -15,7 +15,7 @@
 
 <ul>
 @for(earthquake <- earthquakes){
-    <li>@{earthquake.latitude} - @{earthquake.longitude}</li>
+    <li>@{earthquake.date}: (@{earthquake.latitude}, @{earthquake.longitude})</li>
 }
 </ul>
 

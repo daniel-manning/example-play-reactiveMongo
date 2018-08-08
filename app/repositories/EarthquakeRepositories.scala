@@ -1,6 +1,6 @@
 package repositories
 
-import javax.inject.Inject
+import javax.inject.{Inject, Singleton}
 import org.joda.time.{DateTime, DateTimeZone}
 import play.api.Configuration
 import play.api.libs.json.{JsValue, Json}
@@ -9,6 +9,7 @@ import reactivemongo.api.DefaultDB
 import reactivemongo.bson.BSONObjectID
 import uk.gov.hmrc.mongo.ReactiveRepository
 import uk.gov.hmrc.mongo.json.ReactiveMongoFormats
+import uk.gov.hmrc.http.cache.client.CacheMap
 
 
 case class DatedCacheMap(id: String,
