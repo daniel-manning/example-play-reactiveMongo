@@ -9,7 +9,7 @@ scalaVersion := "2.11.11"
 
 resolvers += Resolver.bintrayRepo("hmrc", "releases")
 
-libraryDependencies += filters
+//libraryDependencies += filters
 libraryDependencies += "uk.gov.hmrc" %% "play-reactivemongo" % "6.2.0"
 
 //Test

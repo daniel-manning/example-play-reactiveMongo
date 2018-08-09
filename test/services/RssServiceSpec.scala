@@ -22,7 +22,7 @@ class RssServiceSpec extends FlatSpec with Matchers {
     val rssService:RssService = new RssService(new TestFeedRssConnector())
     val earthquake:Option[Earthquake] = rssService.nodeToEarthquake(entryNode)
     val dateTimeFormatter = DateTimeFormat.forPattern("yyyy-MM-dd HH:mm:ss ZZZ")
-    earthquake shouldBe Some(Earthquake(dateTimeFormatter.parseDateTime("2018-08-06 20:30:46 UTC"), 37.632, -118.870, "Magnitude 0"))
+    earthquake shouldBe Some(Earthquake("urn:earthquake-usgs-gov:nc:73065646", dateTimeFormatter.parseDateTime("2018-08-06 20:30:46 UTC"), 37.632, -118.870, "Magnitude 0"))
   }
 
 }
