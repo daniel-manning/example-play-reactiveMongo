@@ -11,7 +11,6 @@ resolvers += Resolver.bintrayRepo("hmrc", "releases")
 
 libraryDependencies += filters
 libraryDependencies += "uk.gov.hmrc" %% "play-reactivemongo" % "6.2.0"
-libraryDependencies += "uk.gov.hmrc" %% "http-caching-client" % "7.1.0"
 
 //Test
 libraryDependencies += "org.scalatestplus.play" %% "scalatestplus-play" % "2.0.1" % Test
